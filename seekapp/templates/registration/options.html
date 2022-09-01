@@ -1,0 +1,26 @@
+{% extends 'slider-base.html' %}
+{% load static %}
+{%load crispy_forms_tags%} 
+{% block content %} 
+{{block.super}}
+<div class="container-fluid options-page" >
+
+<div class="btn-options text-center" style="padding-top: 150px;">
+    <a href="{%url 'jobseeker_signup' %}" class="btn btn btn-warning mr-4">Sign Up As Jobseeker</a>
+    <a href="{%url 'employer_signup' %}" class="btn btn btn-info">Sign Up As Employer</a>
+</div>
+
+</div>
+
+<div class="foot-cont">
+    <footer class="text-center text-dark text-lg-start " style="background-color:  #e6f0f9;">
+     
+      <!-- Copyright -->
+      <div class="text-center p-3 text-white" style="background-color: #0969C3">
+        © 2022 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">StartAerospace.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+{%endblock%}
